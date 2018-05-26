@@ -216,11 +216,11 @@ $(document).ready(function(){
 
 
 
+<div id="gitmentContainer"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-  var gitment = new Gitment({
-    id: '{{page.articleId}}',
+  var gitment = new Gitment({ 
     owner: 'salii123',
     repo: 'salii123@github.io',
     oauth: {
@@ -228,7 +228,7 @@ $(document).ready(function(){
       client_secret: 'bff18344bba7f4a9408247c9547a91d08fdf33f0',
     },
   })
-  gitment.render('comments')
+  gitment.render('gitmentContainer')
 </script>
 
 
