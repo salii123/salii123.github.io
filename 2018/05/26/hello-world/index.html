@@ -148,10 +148,9 @@
 
 
 
-<div id="SOHUCS" style="width: 95%;"></div>
+<div id="gitmentContainer"></div>
 
 </div>
-<div id="gitmentContainer"></div> 
       <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
@@ -393,8 +392,8 @@ $(document).ready(function(){
 
 
 
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
 <script>
   var gitment = new Gitment({ 
     id: 'Hello World'
@@ -405,7 +404,7 @@ $(document).ready(function(){
       client_secret: 'bff18344bba7f4a9408247c9547a91d08fdf33f0',
     },
   })
-  gitment.render('comments')
+  gitment.render('gitmentContainer')
 </script>
 
 
